@@ -13,7 +13,7 @@ type DadosProps = {
 export function Dado6(props : DadosProps){
     const [value, setValue] = useState("?");
     const rollDice = async () => {
-        const response = await fetch('http://localhost:8000/api/D6');
+        const response = await fetch('http://localhost:8000/api/rolar/6');
         const data = await response.text();
         setValue(data)
         props.addRolada({ dado: "D6", numero: data});
@@ -38,7 +38,7 @@ export function Dado6(props : DadosProps){
 export function Dado10(props : DadosProps){
     const [value, setValue] = useState("?");
     const rollDice = async () => {
-        const response = await fetch('http://localhost:8000/api/D10');
+        const response = await fetch('http://localhost:8000/api/rolar/10');
         const data = await response.text();
         setValue(data)
         props.addRolada({ dado: "D10", numero: data});
@@ -63,7 +63,7 @@ export function Dado10(props : DadosProps){
 export function Dado12(props : DadosProps){
     const [value, setValue] = useState("?");
     const rollDice = async () => {
-        const response = await fetch('http://localhost:8000/api/D12');
+        const response = await fetch('http://localhost:8000/api/rolar/12');
         const data = await response.text();
         setValue(data)
         props.addRolada({ dado: "D12", numero: data});
@@ -88,7 +88,7 @@ export function Dado12(props : DadosProps){
 export function Dado20(props : DadosProps){
     const [value, setValue] = useState("?");
     const rollDice = async () => {
-        const response = await fetch('http://localhost:8000/api/D20');
+        const response = await fetch('http://localhost:8000/api/rolar/20');
         const data = await response.text();
         setValue(data)
         props.addRolada({ dado: "D20", numero: data});
