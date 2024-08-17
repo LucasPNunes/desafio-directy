@@ -1,50 +1,65 @@
-# React + TypeScript + Vite
+Aqui está um exemplo de README para o seu projeto:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Desafio Directy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este é o repositório do desafio roll-dice. Ele consiste em uma aplicação React com uma API construída usando Express. A aplicação permite rolar dados e mantém um histórico dos resultados.
 
-## Expanding the ESLint configuration
+## Como executar o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Clone o repositório
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/LucasPNunes/desafio-directy.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Navegue até o diretório do projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Certifique-se de que está no diretório correto:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd desafio-directy
 ```
+
+### 3. Instale as dependências do projeto
+
+Instale as dependências do projeto principal:
+
+```bash
+npm install
+```
+
+### 4. Instale as dependências da API
+
+Navegue até o diretório `api` e instale as dependências específicas da API:
+
+```bash
+cd api
+npm install
+```
+
+### 5. Volte para o diretório raiz
+
+Volte para o diretório raiz do projeto:
+
+```bash
+cd ..
+```
+
+### 6. Execute o projeto
+
+Finalmente, execute o projeto:
+
+```bash
+npm run dev
+```
+
+Isso iniciará tanto a aplicação React quanto a API Express. A aplicação estará disponível em `http://localhost:5173`, e a API estará rodando em `http://localhost:8000`.
+
+## Tecnologias Utilizadas
+
+- **React**: Para a construção da interface do usuário.
+- **Express**: Para a criação da API.
+- **TypeScript**: Para tipagem estática tanto no frontend quanto no backend.
+- **Vite**: Ferramenta de build para o frontend React.

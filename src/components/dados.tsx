@@ -19,7 +19,7 @@ export function Dado6(props : DadosProps){
         props.addRolada({ dado: "D6", numero: data});
     }
     return(
-        <div className='dado' style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
+        <div className='dado'>
             <div style={{backgroundColor:"white", width:"318px", height:"318px", borderRadius:"24px"}}>
                 <img src={D6PNG} alt="Dado6" style={{width:"200px", height:"200px",marginTop:"60px"}}/>
             </div>
@@ -44,7 +44,7 @@ export function Dado10(props : DadosProps){
         props.addRolada({ dado: "D10", numero: data});
     }
     return(
-        <div className='dado' style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
+        <div className='dado'>
             <div style={{backgroundColor:"white", width:"318px", height:"318px", borderRadius:"24px"}}>
                 <img src={D10PNG} alt="Dado10" style={{width:"200px", height:"200px",marginTop:"60px"}}/>
             </div>
@@ -69,7 +69,7 @@ export function Dado12(props : DadosProps){
         props.addRolada({ dado: "D12", numero: data});
     }
     return(
-        <div className='dado' style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
+        <div className='dado'>
             <div style={{backgroundColor:"white", width:"318px", height:"318px", borderRadius:"24px"}}>
                 <img src={D12PNG} alt="Dado12" style={{width:"200px", height:"200px",marginTop:"60px"}}/>
             </div>
@@ -94,7 +94,7 @@ export function Dado20(props : DadosProps){
         props.addRolada({ dado: "D20", numero: data});
     }
     return(
-        <div className='dado' style={{display:"flex", flexDirection:"row", justifyContent:"space-around", alignItems:"center"}}>
+        <div className='dado'>
             <div style={{backgroundColor:"white", width:"318px", height:"318px", borderRadius:"24px"}}>
                 <img src={D20PNG} alt="Dado20" style={{width:"200px", height:"200px",marginTop:"60px"}}/>
             </div>
