@@ -1,7 +1,3 @@
-Aqui está um exemplo de README para o seu projeto:
-
----
-
 # Desafio Directy
 
 Este é o repositório do desafio roll-dice. Ele consiste em uma aplicação React com uma API construída usando Express. A aplicação permite rolar dados e mantém um histórico dos resultados.
